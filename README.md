@@ -1,4 +1,4 @@
-# moodle-oercourseinfo_tugraz
+# moodle-oeruploader_tugraz
 
 Subplugin for [local_oer](https://github.com/llttugraz/moodle-local_oer) plugin
 
