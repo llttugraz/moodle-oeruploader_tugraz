@@ -43,4 +43,4 @@ $string['queueposition']          = 'Position';
 $string['attempt']                = 'Versuch #';
 $string['fullsize']               = 'Die Grösse aller zum Hochladen vorgesehenen Dateien ist {$a}. ' .
                                     'Grösse basiert auf den unkomprimierten Dateigrössen.';
-
+$string['privacy:metadata']       = 'Dieses Plugin speichert keine persönlichen Daten.';
