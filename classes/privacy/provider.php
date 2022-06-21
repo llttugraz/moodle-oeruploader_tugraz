@@ -15,20 +15,27 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Graz University of Technology specific subplugin for Open Educational Resources Plugin.
+ * Open Educational Resources Plugin
  *
  * @package    oeruploader_tugraz
  * @author     Christian Ortner <christian.ortner@tugraz.at>
- * @copyright  2022 Educational Technologies, Graz, University of Technology
+ * @copyright  2019-2022 Educational Technologies, Graz, University of Technology
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
-defined('MOODLE_INTERNAL') || die();
+namespace oeruploader_tugraz\privacy;
 
-$plugin->version      = 2022020100;
-$plugin->requires     = 2020061500;
-$plugin->component    = 'oeruploader_tugraz';
-$plugin->release      = 'v1.0.1';
-$plugin->dependencies = [
-        'local_oer'           => 2021121000
-];
+/**
+ * Class provider
+ */
+class provider implements \core_privacy\local\metadata\null_provider {
+
+    /**
+     * Null provider, does not store any data.
+     *
+     * @return  string
+     */
+    public static function get_reason() : string {
+        return 'privacy:metadata';
+    }
+}

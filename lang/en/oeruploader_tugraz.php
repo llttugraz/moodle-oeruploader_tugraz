@@ -44,3 +44,4 @@ $string['attempt']                = 'Attempt';
 $string['fullsize']               = 'The size of files released for upload in all ' .
                                     'enqueued courses is {$a}. ' .
                                     'This is an uncompressed estimation.';
+$string['privacy:metadata']       = 'This plugin does not store any personal data.';
